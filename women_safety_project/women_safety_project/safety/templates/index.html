@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+  <meta charset="UTF-8">
+  <title>Women Safety App</title>
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="header">
+      <h1>🚨 Women Safety Alert</h1>
+      <p class="subtitle">Empowering Women with Technology</p>
+      <p class="note">Say <strong>"help me"</strong> or <strong>"assist me"</strong> to activate the emergency alert.</p>
+    </div>
+
+    <div class="button-group">
+      <button id="panicBtn" class="btn danger">🚨 Alert & Share Location</button>
+      <button id="voiceBtn" class="btn primary">🎙️ Activate Voice Assistant</button>
+      <button id="voiceDisableBtn" class="btn warning" style="display: none;">🔇 Disable Assistant</button>
+      <button id="callBtn" class="btn dark" onclick="window.location.href='tel:112'">📞 Emergency Call</button>
+    </div>
+
+    <div class="contact-select">
+      <label for="contactSelect">Select Emergency Contact</label>
+      <select id="contactSelect">
+        <option value="911091">👮‍♀️ Women Helpline (1091)</option>
+        <option value="91112">🚨 Police Emergency (112)</option>
+        <option value="911930">🕵️‍♀️ Cyber Crime (1930)</option>
+        <option value="919999888777">👩‍👧‍👦 Trusted Contact</option>
+      </select>
+    </div>
+
+    <div class="status">
+      <div id="locationInfo" class="location"></div>
+      <div id="voiceStatus">🎤 Voice command is <strong>OFF</strong></div>
+    </div>
+
+    <div class="map-container">
+      <iframe id="mapFrame" width="100%" height="250" class="map-frame"></iframe>
+    </div>
+
+    <div class="tools-card">
+      <h2>More Safety Tools</h2>
+      <div class="tool-buttons">
+        <button id="chat" class="btn outline">💬 Chat Support</button>
+        <button id="safety" class="btn outline-info">📖 Safety Tips</button>
+        <button id="emergency" class="btn outline-danger">📩 Send Emergency SMS</button>
+        <button id="WhatsApp" class="btn outline-success">📱 Send WhatsApp Alert</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="{% static 'main.js' %}"></script>
+
+</body>
+</html>

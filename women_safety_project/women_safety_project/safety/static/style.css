@@ -1,0 +1,181 @@
+/* Base styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  color: #c0392b;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-style: italic;
+  color: #7f8c8d;
+  margin: 0;
+}
+
+.note {
+  font-size: 1em;
+  margin-top: 5px;
+}
+
+/* Buttons */
+.button-group, .tool-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.btn {
+  padding: 14px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.danger {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.primary {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.warning {
+  background-color: #f39c12;
+  color: #fff;
+}
+
+.dark {
+  background-color: #2c3e50;
+  color: #fff;
+}
+
+.outline {
+  background-color: #fff;
+  border: 2px solid #bdc3c7;
+  color: #34495e;
+}
+
+.outline-info {
+  background-color: #fff;
+  border: 2px solid #3498db;
+  color: #3498db;
+}
+
+.outline-danger {
+  background-color: #fff;
+  border: 2px solid #e74c3c;
+  color: #e74c3c;
+}
+
+.outline-success {
+  background-color: #fff;
+  border: 2px solid #2ecc71;
+  color: #2ecc71;
+}
+
+/* Contact Dropdown */
+.contact-select {
+  margin: 25px 0;
+}
+
+.contact-select label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.contact-select select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Status Section */
+.status {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 1rem;
+}
+
+#voiceStatus {
+  font-weight: bold;
+  color: #7f8c8d;
+  margin-top: 8px;
+}
+
+/* Location & Map */
+.location {
+  margin-bottom: 10px;
+}
+
+.map-container {
+  margin-top: 20px;
+}
+
+.map-frame {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Tools Card */
+.tools-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.tools-card h2 {
+  font-size: 1.4em;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+/* Responsive */
+@media (min-width: 600px) {
+  .button-group, .tool-buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .btn {
+    width: 48%;
+  }
+
+  .outline {
+    margin-top: 8px;
+  }
+}
